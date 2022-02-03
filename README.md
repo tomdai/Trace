@@ -17,18 +17,18 @@ await Trace.geocode
 Returns `Optional("US")`
 
 ```swift
-print(await Trace.callingCodes)
+await Trace.callingCodes
 ``` 
 Returns `["1"]`
 Or `["1809","1829","1849"]` (Can be multiple codes for geocode like "DO")
 Or `[]` (Can be empty if no result is found)
 
 ```swift
-print(await Trace.primaryCallingCode)
+await Trace.primaryCallingCode
 ```
 Returns `Optional("1")`
 
 ```swift
-print(await Trace.time)
+await Trace.time
 ```
 Returns `Optional(2022-02-03 17:33:40 +0000)` (The time at which the request is received)
