@@ -53,7 +53,8 @@ public struct Trace {
     
     public static var callingCodes: [String] {
         get async {
-            return await Self.geocode == nil ? [] : Self.callingCodes(for: Self.geocode!)
+            guard let geocode = await Self.geocode else { return [] }
+            return Self.callingCodes(for: geocode)
         }
     }
     
