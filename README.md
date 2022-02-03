@@ -19,8 +19,8 @@ Returns `Optional("US")`
 ```swift
 await Trace.callingCodes
 ``` 
-Returns `["1"]`
-Or `["1809","1829","1849"]` (Can be multiple codes for geocode like "DO")
+Returns `["1"]`\
+Or `["1809","1829","1849"]` (Can be multiple codes for geocode like "DO")\
 Or `[]` (Can be empty if no result is found)
 
 ```swift
